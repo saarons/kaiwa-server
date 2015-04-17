@@ -193,6 +193,8 @@ log = {
 --
 --Component "gateway.localhost"
 --	component_secret = "password"
+component_ports = { 5347 }
+component_interface = "0.0.0.0"
 
 ------ Additional config files ------
 -- For organizational purposes you may prefer to add VirtualHost and

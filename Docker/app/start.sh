@@ -64,6 +64,8 @@ echo "    max_history_messages = 50;" >> /etc/prosody/conf.d/domain.cfg.lua
 echo "    max_archive_query_results = 50;" >> /etc/prosody/conf.d/domain.cfg.lua
 echo "    muc_log_by_default = true;" >> /etc/prosody/conf.d/domain.cfg.lua
 echo "    muc_log_all_rooms = true;" >> /etc/prosody/conf.d/domain.cfg.lua
+echo Component \"${XMPP_COMPONENT_SUBDOMAIN}.${XMPP_DOMAIN}\" >> /etc/prosody/conf.d/domain.cfg.lua
+echo "    component_secret = \"${XMPP_COMPONENT_SECRET}\"" >> /etc/prosody/conf.d/domain.cfg.lua
 
 chmod 755 /etc/prosody/conf.d/domain.cfg.lua
 
